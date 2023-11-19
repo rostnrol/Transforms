@@ -7,7 +7,7 @@ public class CubeMover : MonoBehaviour
     [SerializeField] private float _movementSpeed = 5f;
     [SerializeField] private float _rotationSpeed = 1000f;
 
-    void Update()
+    private void Update()
     {
         if (Input.GetKey(KeyCode.A))
             transform.Rotate(0, _rotationSpeed * Time.deltaTime, 0);
